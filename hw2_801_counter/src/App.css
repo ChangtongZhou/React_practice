@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+.App-container {
+  max-width: 60rem;
+  width: 100%;
+  background: lightgray;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.App-box {
+  width: 70%;
+  height: 200px;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+  transition: 200ms;
+  color: white;
+  background: #333;
+}
+
+.App-box > p {
+  font-size: 60px;
+  text-align: center;
+  padding: 5%;
+}
+.App-buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
+  height: 300px;
+  padding: 5px;
+}
