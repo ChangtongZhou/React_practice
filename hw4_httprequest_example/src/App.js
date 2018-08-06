@@ -20,8 +20,6 @@ class App extends Component {
       console.log(err);
       alert(err);
     });
-
-    axios({method: 'get', url: 'https://api.github.com/users/mojombo'})
   }
 
   getDetail = (login)=>{
