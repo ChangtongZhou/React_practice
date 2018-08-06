@@ -6,7 +6,8 @@ import Table from './components/Table.js';
 import Header from './components/Header.js';
 import Main from './components/Main.js';
 import Footer from './components/Footer.js';
-// import Box from './components/Box.js';
+
+// Refer: https://codepen.io/kunukn/pen/XKxddb
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
         <Table data = {tableData}/>
 
         <br />
+        <br />
         <h1>Build simple website layout</h1>
         <div className = "Layout">
             <div className="App-header">
@@ -45,6 +47,7 @@ class App extends Component {
             </div>
         </div>
 
+        <br />
         <br />
         <h1>Build simple iPhone screen layout</h1>
         <div className = "Layout">
