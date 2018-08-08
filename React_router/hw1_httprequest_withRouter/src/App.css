@@ -1,0 +1,8 @@
+.App-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.App-detail-container {
+  margin-left: 300px;
+}
