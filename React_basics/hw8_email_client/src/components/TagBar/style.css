@@ -1,0 +1,7 @@
+.tagbar {
+  background-color: black;
+}
+
+.clickable:hover {
+  background-color: gray;
+}

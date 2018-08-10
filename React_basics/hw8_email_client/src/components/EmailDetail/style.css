@@ -1,0 +1,17 @@
+.emailContent {
+  width: 60%;
+}
+
+#panel_heading1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+}
+
+#panel_heading2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: gray;
+}

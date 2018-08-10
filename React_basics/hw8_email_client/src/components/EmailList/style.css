@@ -1,0 +1,34 @@
+.sendingInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: silver;
+}
+
+.subject {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#dot {
+  color: red;
+}
+
+.emptyContainer{
+  width: 30%;
+  color: silver;
+  display: flex;           /* establish flex container */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;
+}
+
+.emailList {
+  width: 30%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#listItem:hover {
+  background-color: ivory;
+}
