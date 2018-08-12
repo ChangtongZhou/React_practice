@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+/* body{
+  text-align: center;
+  padding: 40px 0 0 0;
+} */
+
+fieldset{
+  border: none;
+}
+
+output{
+  display: inline-block;
+  min-width: 2.5em;
+}
+
+label, output{
+  padding: 2px 9px;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 1.1em;
+}
+
+label[for=red], output[for=red]{
+  background-color: #f00;
+}
+label[for=green], output[for=green]{
+  background-color: #0f0;
+}
+label[for=blue], output[for=blue]{
+  background-color: #00f;
+}
+label[for=alpha], output[for=alpha]{
+  background-color: silver;
+}
