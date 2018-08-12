@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+#inputBar {
+  margin: 10% 30%;
+  border-bottom: 3px solid blue;
+  width: 700px;
+}
