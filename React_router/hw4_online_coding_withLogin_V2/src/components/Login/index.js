@@ -23,7 +23,7 @@ class Login extends Component {
 
     axios({
       method: 'post',
-      url: 'http://api.haochuan.io/login?noError=1',
+      url: 'http://api.haochuan.io/login',
       data: {username: this.state.username, password: this.state.password},
     })
     .then(res=>{

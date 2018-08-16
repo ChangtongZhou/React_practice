@@ -8,11 +8,13 @@ class Problems extends Component {
   }
 
   componentDidMount() {
+    console.log("Mounting?????")
     if (this.props.isAuthed) {
       const {match} = this.props;
       const id = match.params.problemId;
       axios({method: 'get', url: `http://api.haochuan.io/oj/problems/${id}?noError=1`})
       .then(res=>{
+        console.log(`1111111111: ${res.data}`);
         this.setState({problem: res.data.question});
       })
       .catch(err=>{
@@ -41,7 +43,7 @@ class Problems extends Component {
         </div>
       )
     } else {
-      return null;
+      return <p> Not working</p>;
     }
   }
 }

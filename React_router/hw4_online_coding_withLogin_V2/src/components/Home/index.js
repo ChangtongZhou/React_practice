@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import { Route, Link} from 'react-router-dom';
+import { Route, Link, withRouter} from 'react-router-dom';
 import Problems from '../Problems';
 
 class Home extends Component {
@@ -24,30 +24,26 @@ class Home extends Component {
     }
   };
 
-  // selectQuestion = (id) => {
-  //   this.props.history.push(`/${id}`);
-  // };
-
   render() {
     let url = this.props.match.url;
     let path = this.props.match.path;
-    console.log(`url: ${url}`);
-    console.log(`path: ${path}`);
+    const WithRouteProblems = withRouter(Problems);
+
     return (
       <div>
         <ul>
           {this.state.list && this.state.list.map((q, idx) => {
             return (
               <li key={idx}>
-                <Link to={`${url}/${q.id}`}>{q.title}</Link>
+                <Link to={`${url}${q.id}`}>{q.title}</Link>
               </li>
             )
           })}
         </ul>
         <Route
-          path={`${path}/:problemId`}
-          render={()=>(
-            <Problems isAuthed={this.props.isAuthed} match={this.props.match}/>
+          path={`${path}:problemId`}
+          render={() => (
+            <WithRouteProblems isAuthed={this.props.isAuthed} />
           )}
         />
       </div>
