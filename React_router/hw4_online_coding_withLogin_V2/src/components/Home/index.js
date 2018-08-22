@@ -6,7 +6,7 @@ import Problems from '../Problems';
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {list: null}
+    this.state = {list: []}
   }
 
   componentDidMount() {
@@ -27,12 +27,12 @@ class Home extends Component {
   render() {
     let url = this.props.match.url;
     let path = this.props.match.path;
-    const WithRouteProblems = withRouter(Problems);
+    // const WithRouteProblems = withRouter(Problems);
 
     return (
       <div>
         <ul>
-          {this.state.list && this.state.list.map((q, idx) => {
+          {this.state.list.map((q, idx) => {
             return (
               <li key={idx}>
                 <Link to={`${url}${q.id}`}>{q.title}</Link>
@@ -42,9 +42,7 @@ class Home extends Component {
         </ul>
         <Route
           path={`${path}:problemId`}
-          render={() => (
-            <WithRouteProblems isAuthed={this.props.isAuthed} />
-          )}
+          component = {Problems}
         />
       </div>
     )

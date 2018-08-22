@@ -4,7 +4,7 @@ import axios from 'axios';
 class Problems extends Component {
   constructor(props) {
     super(props);
-    this.state = {problem: null};
+    this.state = {problem: {}};
   }
 
   componentDidMount() {
